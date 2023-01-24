@@ -76,7 +76,7 @@ public class ClanCompareProcessor {
 					ClanRank rsClanRank = rsResults.get(member);
 					if (!rank.equals(rsClanRank)) {
 						//NEED EXCEPTION CASES FOR:
-						//Arquendi/Adele/Administrator (same rank, I guess we moved Martin down 5 years ago?  Who knew)
+						//Arquendi/Adele/Administrator (same rank)
 						//Registered User/Applicant (same rank)
 						//Eldar/Ontari (same rank)
 						if(!rank.getRsClanRank().equals(rsClanRank.getRsClanRank())) {

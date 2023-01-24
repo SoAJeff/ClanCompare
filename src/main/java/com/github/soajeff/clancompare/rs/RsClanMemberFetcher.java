@@ -74,7 +74,9 @@ public class RsClanMemberFetcher {
 					BufferedReader br = new BufferedReader(streamReader);
 					Stream<String> lines = br.lines()) {
 				linesRead.addAll(
-						lines.map(s -> s.replace("�", "_")).map(s -> s.replace(" ", "_")).collect(Collectors.toList()));
+						lines.map(s -> s.replace("�", "_"))
+								.map(s->s.replace(" ", "_"))
+								.map(s -> s.replace(" ", "_")).collect(Collectors.toList()));
 			}
 		}
 		else {
